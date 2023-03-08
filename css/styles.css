@@ -96,12 +96,13 @@ img {
     padding: 27px 0;
     display: block;
     color: var(--Navy-blue-color);
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .header-hover:is(:hover, :focus)  {
     color: var(--Ocean-color);
 }
+
 
 .pages-font-weight{
     font-weight: 500;
@@ -400,4 +401,24 @@ footer {
     letter-spacing: 2%;
     color: var(--white-color);
     line-height: 1.5;
+}
+
+.overlay {
+    width: 408px;
+    height: 576px;
+    position: fixed;
+    margin: 88px auto 12px auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #FCFCFC;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
 }
